@@ -1,121 +1,86 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
+
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="app">
+      <nav className="navbar">
+        <div className="logo">CampusConnect</div>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <button className="login-button">Login</button>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </nav>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <main>
+        <section className="hero" id="home">
+          <div className="hero-content">
+            <p className="welcome-text">WELCOME TO CAMPUSCONNECT</p>
+
+            <h1>
+              Your campus life,
+              <span> connected.</span>
+            </h1>
+
+            <p className="hero-description">
+              A digital platform designed to help students discover
+              campus events, access resources, stay informed and connect
+              with their university community.
+            </p>
+
+            <div className="hero-buttons">
+              <button className="primary-button">
+                Get Started
+              </button>
+
+              <button className="secondary-button">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="features" id="features">
+          <div className="section-heading">
+            <p>WHAT CAMPUSCONNECT OFFERS</p>
+            <h2>Everything students need in one place.</h2>
+          </div>
+
+          <div className="feature-grid">
+            <div className="feature-card">
+              <h3>📅 Campus Events</h3>
+              <p>
+                Discover upcoming university events and activities.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>📢 Announcements</h3>
+              <p>
+                Stay updated with important campus announcements.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>📚 Study Resources</h3>
+              <p>
+                Access useful academic resources and study materials.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>🤝 Student Community</h3>
+              <p>
+                Connect with other students and participate in campus life.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   )
 }
 
