@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [showLogin, setShowLogin] = useState(false)
   return (
     <div className="app">
 
@@ -17,15 +19,20 @@ function App() {
           <a href="#home">Home</a>
           <a href="#features">Features</a>
           <a href="#about">About</a>
-          <button className="login-button">Login</button>
+          <button
+              className="login-button"
+              onClick={() => setShowLogin(true)}
+            >
+              Login
+          </button>
         </div>
 
       </nav>
 
     <main>
 
-            {/* Hero */}
-            <section className="hero" id="home">
+      {/* Hero */}
+      <section className="hero" id="home">
 
       <div className="hero-content">
 
@@ -46,10 +53,13 @@ function App() {
 
         <div className="hero-buttons">
 
-          <button className="primary-button">
+        <button
+            className="primary-button"
+            onClick={() => setShowLogin(true)}
+          >
             Get Started
             <span>→</span>
-          </button>
+        </button>
 
           <button className="secondary-button">
             Learn More
@@ -168,9 +178,9 @@ function App() {
                 </p>
           </div>
 
-        </div>
-
-        <section className="about" id="about">
+  </div>
+      {/* about */}
+  <section className="about" id="about">
 
   <div className="about-content">
 
@@ -196,9 +206,12 @@ function App() {
         brings essential student information together in one place.
       </p>
 
-      <button className="primary-button">
-        Get Started
-        <span>→</span>
+      <button
+          className="primary-button"
+          onClick={() => setShowLogin(true)}
+        >
+          Get Started
+          <span>→</span>
       </button>
 
     </div>
@@ -326,8 +339,72 @@ function App() {
 
     </footer>
 
+    {showLogin && (
+      <div className="login-overlay">
+
+        <div className="login-box">
+
+          <button
+            className="close-login"
+            onClick={() => setShowLogin(false)}
+          >
+            ×
+          </button>
+
+          <img
+            src="/logo.png"
+            alt="CampusConnect Logo"
+            className="login-logo"
+          />
+
+          <h2>Welcome back</h2>
+
+          <p className="login-subtitle">
+            Sign in to your CampusConnect account.
+          </p>
+
+          <form>
+
+            <label>Email Address</label>
+
+            <input
+              type="email"
+              placeholder="Enter your email"
+            />
+
+            <label>Password</label>
+
+            <input
+              type="password"
+              placeholder="Enter your password"
+            />
+
+            <button
+              type="submit"
+              className="login-submit"
+            >
+              Login
+            </button>
+
+          </form>
+
+          <p className="login-register">
+            Don't have an account?
+
+            <button type="button">
+              Create one
+            </button>
+          </p>
+
         </div>
-      )
-}
+
+      </div>
+    )}
+
+    </div>
+    )
+    }
+
+
 
 export default App
