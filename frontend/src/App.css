@@ -769,4 +769,20 @@ body {
   font-size: 13px;
 
   cursor: pointer;
+
+}
+
+.login-box {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.login-box form {
+  text-align: left;
+}
+
+.login-box label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 7px;
 }

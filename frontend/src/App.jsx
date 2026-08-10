@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
+  const [showRegister, setShowRegister] = useState(false)
   return (
     <div className="app">
 
@@ -338,7 +339,7 @@ function App() {
       </div>
 
     </footer>
-
+    {}
     {showLogin && (
       <div className="login-overlay">
 
@@ -388,18 +389,106 @@ function App() {
 
           </form>
 
-          <p className="login-register">
-            Don't have an account?
+        <p className="login-register">
+          Don't have an account?
 
-            <button type="button">
-              Create one
-            </button>
-          </p>
+          <button
+            type="button"
+            onClick={() => {
+              setShowLogin(false)
+              setShowRegister(true)
+            }}
+          >
+            Create one
+          </button>
+        </p>
 
         </div>
 
       </div>
     )}
+
+    {showRegister && (
+  <div className="login-overlay">
+
+    <div className="login-box">
+
+      <button
+        className="close-login"
+        onClick={() => setShowRegister(false)}
+      >
+        ×
+      </button>
+
+      <img
+        src="/logo.png"
+        alt="CampusConnect Logo"
+        className="login-logo"
+      />
+
+      <h2>Create an account</h2>
+
+      <p className="login-subtitle">
+        Join the CampusConnect community.
+      </p>
+
+      <form>
+
+        <label>Full Name</label>
+
+        <input
+          type="text"
+          placeholder="Enter your full name"
+        />
+
+        <label>Student Email</label>
+
+        <input
+          type="email"
+          placeholder="Enter your student email"
+        />
+
+        <label>Password</label>
+
+        <input
+          type="password"
+          placeholder="Create a password"
+        />
+
+        <label>Confirm Password</label>
+
+        <input
+          type="password"
+          placeholder="Confirm your password"
+        />
+
+        <button
+          type="submit"
+          className="login-submit"
+        >
+          Create Account
+        </button>
+
+      </form>
+
+      <p className="login-register">
+        Already have an account?
+
+        <button
+          type="button"
+          onClick={() => {
+            setShowRegister(false)
+            setShowLogin(true)
+          }}
+        >
+          Login
+        </button>
+      </p>
+
+    </div>
+
+  </div>
+)}
 
     </div>
     )
