@@ -941,3 +941,984 @@ body {
   align-items: center;
   gap: 8px;
 }
+
+/* =========================
+   EVENTS PAGE
+========================= */
+
+.events-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+
+/* Events Header */
+
+.events-header {
+  text-align: center;
+  padding: 90px 8% 70px;
+  background: #eef4ff;
+}
+
+.events-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.events-header h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.events-header h1 span {
+  display: block;
+}
+
+.events-header > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* Events Section */
+
+.events-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 5%;
+}
+
+.events-top h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.events-top p {
+  color: #667085;
+}
+
+
+/* Categories */
+
+.event-categories {
+  display: flex;
+  gap: 12px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.category {
+  border: 1px solid #d9dee7;
+  background: white;
+  color: #4b5563;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.category.active {
+  background: #172033;
+  color: white;
+  border-color: #172033;
+}
+
+
+/* Event Grid */
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+/* Event Card */
+
+.event-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* Event Image */
+
+.event-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Event Content */
+
+.event-content {
+  padding: 28px;
+}
+
+.event-category {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #596579;
+}
+
+.event-content h3 {
+  font-size: 24px;
+  margin: 10px 0 12px;
+}
+
+.event-content > p {
+  color: #667085;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* Event Information */
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #596579;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+
+/* Event Button */
+
+.event-button {
+  border: none;
+  background: #172033;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* Events Footer */
+
+.events-footer {
+  text-align: center;
+  padding: 20px 8% 70px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #172033;
+  font-weight: 600;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .events-header h1 {
+    font-size: 42px;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .events-header {
+    padding: 60px 5%;
+  }
+
+  .events-header h1 {
+    font-size: 36px;
+  }
+
+  .events-section {
+    padding: 60px 5%;
+  }
+
+  .event-categories {
+    gap: 8px;
+  }
+
+}
+
+/* =========================
+   ANNOUNCEMENTS PAGE
+========================= */
+
+.announcements-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+
+/* Announcements Header */
+
+.announcements-header {
+  text-align: center;
+  padding: 90px 8% 70px;
+  background: #eef4ff;
+}
+
+.announcements-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.announcements-header h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.announcements-header h1 span {
+  display: block;
+}
+
+.announcements-header > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* Announcements Section */
+
+.announcements-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 5%;
+}
+
+.announcements-top h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.announcements-top p {
+  color: #667085;
+}
+
+
+/* Categories */
+
+.announcement-categories {
+  display: flex;
+  gap: 12px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.announcement-category {
+  border: 1px solid #d9dee7;
+  background: white;
+  color: #4b5563;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.announcement-category.active {
+  background: #172033;
+  color: white;
+  border-color: #172033;
+}
+
+
+/* Announcement List */
+
+.announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Announcement Card */
+
+.announcement-card {
+  display: flex;
+  gap: 25px;
+  padding: 28px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+
+/* Date */
+
+.announcement-date {
+  width: 70px;
+  min-width: 70px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eef4ff;
+  border-radius: 10px;
+}
+
+.announcement-date strong {
+  font-size: 25px;
+  color: #172033;
+}
+
+.announcement-date span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #667085;
+}
+
+
+/* Announcement Content */
+
+.announcement-content {
+  flex: 1;
+}
+
+.announcement-category-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.announcement-category-label.important {
+  color: #b42318;
+}
+
+.announcement-category-label.academic {
+  color: #175cd3;
+}
+
+.announcement-category-label.campus {
+  color: #027a48;
+}
+
+.announcement-category-label.event {
+  color: #7a5af8;
+}
+
+.announcement-content h3 {
+  font-size: 22px;
+  margin: 5px 0 10px;
+}
+
+.announcement-content p {
+  color: #667085;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+
+/* Button */
+
+.announcement-button {
+  border: none;
+  background: transparent;
+  color: #172033;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+/* Footer */
+
+.announcements-footer {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .announcements-header {
+    padding: 60px 5%;
+  }
+
+  .announcements-header h1 {
+    font-size: 40px;
+  }
+
+  .announcements-section {
+    padding: 60px 5%;
+  }
+
+  .announcement-card {
+    flex-direction: column;
+  }
+
+  .announcement-date {
+    width: 70px;
+  }
+
+}
+
+/* =========================
+   RESOURCES PAGE
+========================= */
+
+.resources-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.resources-header {
+  text-align: center;
+  padding: 90px 8% 70px;
+  background: #eef4ff;
+}
+
+.resources-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.resources-header h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.resources-header h1 span {
+  display: block;
+}
+
+.resources-header > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* Resources Section */
+
+.resources-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 5%;
+}
+
+.resources-top h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.resources-top p {
+  color: #667085;
+}
+
+
+/* Categories */
+
+.resource-categories {
+  display: flex;
+  gap: 12px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.resource-category {
+  border: 1px solid #d9dee7;
+  background: white;
+  color: #4b5563;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resource-category.active {
+  background: #172033;
+  color: white;
+  border-color: #172033;
+}
+
+
+/* Resource Grid */
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* Resource Card */
+
+.resource-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* Icon */
+
+.resource-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef4ff;
+  border-radius: 12px;
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
+
+/* Content */
+
+.resource-type {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #667085;
+}
+
+.resource-card h3 {
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+.resource-card > p {
+  color: #667085;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* Meta */
+
+.resource-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #667085;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+
+/* Button */
+
+.resource-button {
+  border: none;
+  background: #172033;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* Footer */
+
+.resources-footer {
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resources-header h1 {
+    font-size: 45px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .resources-header {
+    padding: 60px 5%;
+  }
+
+  .resources-header h1 {
+    font-size: 36px;
+  }
+
+  .resources-section {
+    padding: 60px 5%;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   Student Community Page
+   ========================= */
+
+.commity-page {
+  width: 100%;
+  background: #f8fafc;
+  color: #172033;
+}
+
+
+/* =========================
+   Hero
+   ========================= */
+
+.community-page-hero {
+  padding: 100px 8%;
+  text-align: center;
+  background: #eef4ff;
+}
+
+.community-label {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #172033;
+}
+
+.community-page-hero h1 {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 58px;
+  line-height: 1.1;
+}
+
+.community-page-hero h1 span {
+  display: block;
+}
+
+.community-page-hero > p:last-child {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #667085;
+}
+
+
+/* =========================
+   Community Groups
+   ========================= */
+
+.community-groups {
+  padding: 90px 8%;
+  background: white;
+}
+
+.community-section-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.community-section-heading p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #667085;
+}
+
+.community-section-heading h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.community-section-heading span {
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Community Cards
+   ========================= */
+
+.community-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.community-card {
+  padding: 35px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #f8fafc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.08);
+}
+
+.community-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: white;
+  font-size: 27px;
+}
+
+.community-card h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.community-card p {
+  margin-bottom: 22px;
+  color: #667085;
+  line-height: 1.7;
+}
+
+.community-card button {
+  border: none;
+  background: transparent;
+  color: #172033;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+/* =========================
+   Get Involved Section
+   ========================= */
+
+.community-activities {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 8%;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.activities-text h2 {
+  margin-bottom: 25px;
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.activities-text h2 span {
+  display: block;
+}
+
+.activities-text > p:not(.community-label) {
+  max-width: 650px;
+  color: #667085;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+
+/* =========================
+   Activity List
+   ========================= */
+
+.activity-list {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.activity-list div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.activity-list strong {
+  font-size: 16px;
+}
+
+.activity-list span {
+  color: #667085;
+  font-size: 15px;
+}
+
+
+/* =========================
+   Join Community Card
+   ========================= */
+
+.community-join-card {
+  padding: 40px;
+  border-radius: 18px;
+  background: #172033;
+  color: white;
+  text-align: center;
+}
+
+.join-icon {
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.community-join-card h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.community-join-card p {
+  margin-bottom: 25px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.community-join-button {
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  background: white;
+  color: #172033;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* =========================
+   Back to Features
+   ========================= */
+
+.community-back {
+  padding: 0 8% 70px;
+  text-align: center;
+}
+
+.community-back a {
+  text-decoration: none;
+  color: #172033;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .community-page-hero {
+    padding: 80px 6%;
+  }
+
+  .community-page-hero h1 {
+    font-size: 48px;
+  }
+
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community-activities {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 6%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .community-page-hero {
+    padding: 65px 5%;
+  }
+
+  .community-page-hero h1 {
+    font-size: 38px;
+  }
+
+  .community-page-hero > p:last-child {
+    font-size: 16px;
+  }
+
+  .community-groups {
+    padding: 70px 5%;
+  }
+
+  .community-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .community-card {
+    padding: 25px;
+  }
+
+  .activities-text h2 {
+    font-size: 34px;
+  }
+
+  .community-join-card {
+    padding: 30px 25px;
+  }
+
+}

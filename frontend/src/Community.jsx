@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 
-function Community() {
-  return (
-    <div className="feature-page">
 
+function Commity() {
+  return (
+    <div className="commity-page">
       {/* Navigation */}
       <nav className="navbar">
 
@@ -30,148 +30,227 @@ function Community() {
         </div>
 
       </nav>
+      
+      {/* Hero */}
+      <section className="community-page-hero">
 
-
-      {/* Community Hero */}
-      <section className="features-page-hero">
-
-        <p className="features-label">
+        <p className="community-label">
           STUDENT COMMUNITY
         </p>
 
         <h1>
-          Connect with students,
-          <span>build your community.</span>
+          Connect. Participate.
+          <span>Belong.</span>
         </h1>
 
         <p>
-          Connect with other students, discover student activities
-          and become part of a supportive university community.
+          CampusConnect brings students together through
+          communities, clubs, activities and shared interests.
+          Find your people and become part of campus life.
         </p>
 
       </section>
 
 
-      {/* Community Content */}
-      <section className="features-page-content">
+      {/* Student Groups */}
+      <section className="community-groups">
 
-        <div className="feature-detail">
+        <div className="community-section-heading">
 
-          <img
-            src="/community.png"
-            alt="Student Community"
-          />
+          <p>FIND YOUR COMMUNITY</p>
 
-          <div>
+          <h2>
+            Something for every student.
+          </h2>
 
-            <p className="feature-number">
-              01
-            </p>
+          <span>
+            Explore groups and communities based on your
+            interests, studies and hobbies.
+          </span>
 
-            <h2>
-              Meet Other Students
-            </h2>
+        </div>
+
+
+        <div className="community-grid">
+
+          <div className="community-card">
+
+            <div className="community-icon">
+              💻
+            </div>
+
+            <h3>
+              Coding & Technology
+            </h3>
 
             <p>
-              CampusConnect makes it easier to connect with students
-              who share similar interests, courses and activities.
-              Build new friendships and become more involved in
-              university life.
+              Connect with students interested in programming,
+              software development, technology and innovation.
             </p>
+
+            <button>
+              Explore Group →
+            </button>
+
+          </div>
+
+
+          <div className="community-card">
+
+            <div className="community-icon">
+              ⚽
+            </div>
+
+            <h3>
+              Sports & Fitness
+            </h3>
+
+            <p>
+              Find sports groups, fitness activities and
+              students who enjoy staying active.
+            </p>
+
+            <button>
+              Explore Group →
+            </button>
+
+          </div>
+
+
+          <div className="community-card">
+
+            <div className="community-icon">
+              🎨
+            </div>
+
+            <h3>
+              Arts & Culture
+            </h3>
+
+            <p>
+              Discover creative communities, cultural activities,
+              music, art and other student interests.
+            </p>
+
+            <button>
+              Explore Group →
+            </button>
+
+          </div>
+
+
+          <div className="community-card">
+
+            <div className="community-icon">
+              📖
+            </div>
+
+            <h3>
+              Academic Groups
+            </h3>
+
+            <p>
+              Join study groups and connect with students
+              working towards similar academic goals.
+            </p>
+
+            <button>
+              Explore Group →
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* Activities */}
+      <section className="community-activities">
+
+        <div className="activities-text">
+
+          <p className="community-label">
+            GET INVOLVED
+          </p>
+
+          <h2>
+            Campus life is better
+            <span> together.</span>
+          </h2>
+
+          <p>
+            Whether you want to meet new people, join a club,
+            participate in activities or simply find students
+            who share your interests, CampusConnect makes it
+            easier to get involved.
+          </p>
+
+
+          <div className="activity-list">
+
+            <div>
+              <strong>🎉 Social Activities</strong>
+
+              <span>
+                Meet other students and enjoy campus activities.
+              </span>
+            </div>
+
+
+            <div>
+              <strong>👥 Student Clubs</strong>
+
+              <span>
+                Discover clubs and communities that match your interests.
+              </span>
+            </div>
+
+
+            <div>
+              <strong>📚 Study Groups</strong>
+
+              <span>
+                Work together and support each other academically.
+              </span>
+            </div>
 
           </div>
 
         </div>
 
 
-        <div className="feature-detail reverse">
+        {/* Join Community */}
+        <div className="community-join-card">
 
-          <img
-            src="/community.png"
-            alt="Student Activities"
-          />
-
-          <div>
-
-            <p className="feature-number">
-              02
-            </p>
-
-            <h2>
-              Join Student Activities
-            </h2>
-
-            <p>
-              Discover student clubs, societies and campus activities.
-              Find opportunities to participate, meet new people and
-              make the most of your university experience.
-            </p>
-
+          <div className="join-icon">
+            🤝
           </div>
+
+          <h3>
+            Ready to get involved?
+          </h3>
+
+          <p>
+            Join the CampusConnect community and start
+            connecting with other students.
+          </p>
+
+          <button className="community-join-button">
+            Join the Community →
+          </button>
 
         </div>
 
-
-        <div className="feature-detail">
-
-          <img
-            src="/community.png"
-            alt="Student Support"
-          />
-
-          <div>
-
-            <p className="feature-number">
-              03
-            </p>
-
-            <h2>
-              Support Each Other
-            </h2>
-
-            <p>
-              Share experiences, communicate with other students and
-              create a supportive environment where everyone can feel
-              connected and included.
-            </p>
-
-          </div>
-
-        </div>
+      </section>
 
 
-        <div className="feature-detail reverse">
+      {/* Back to Features */}
+      <section className="community-back">
 
-          <img
-            src="/community.png"
-            alt="Campus Community"
-          />
-
-          <div>
-
-            <p className="feature-number">
-              04
-            </p>
-
-            <h2>
-              Be Part of Campus Life
-            </h2>
-
-            <p>
-              Stay involved in what's happening around campus and
-              take an active role in your university community.
-            </p>
-
-            <Link
-              to="/"
-              className="feature-action"
-            >
-              Back to Home →
-            </Link>
-
-          </div>
-
-        </div>
+        <Link to="/features">
+          ← Back to Features
+        </Link>
 
       </section>
 
@@ -179,4 +258,4 @@ function Community() {
   )
 }
 
-export default Community
+export default Commity
