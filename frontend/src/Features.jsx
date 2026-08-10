@@ -1,0 +1,142 @@
+import { Link } from 'react-router-dom'
+function Features() {
+  return (
+    
+    <div className="features-page">
+
+      <section className="features-page-hero">
+
+        <p className="features-label">
+          CAMPUSCONNECT FEATURES
+        </p>
+
+        <h1>
+          Everything students need,
+          <span>all in one place.</span>
+        </h1>
+
+        <p>
+          Explore the tools and resources CampusConnect provides
+          to help you stay informed, connected and involved in
+          your campus community.
+        </p>
+
+      </section>
+
+
+      <section className="features-page-content">
+
+        <div className="feature-detail">
+
+          <img
+            src="/events.png"
+            alt="Campus Events"
+          />
+
+          <div>
+            <p className="feature-number">01</p>
+
+            <h2>Campus Events</h2>
+
+            <p>
+              Discover upcoming university events, activities,
+              workshops and social gatherings. CampusConnect makes
+              it easier to find out what's happening around campus
+              and get involved.
+            </p>
+
+            <button className="feature-action">
+              Explore Events →
+            </button>
+          </div>
+
+        </div>
+
+
+        <div className="feature-detail reverse">
+
+          <img
+            src="/announcements.png"
+            alt="Announcements"
+          />
+
+          <div>
+            <p className="feature-number">02</p>
+
+            <h2>Announcements</h2>
+
+            <p>
+              Stay up to date with important university announcements,
+              notices and information so you never miss something
+              important.
+            </p>
+
+            <button className="feature-action">
+              View Announcements →
+            </button>
+          </div>
+
+        </div>
+
+
+        <div className="feature-detail">
+
+          <img
+            src="/resources.png"
+            alt="Study Resources"
+          />
+
+          <div>
+            <p className="feature-number">03</p>
+
+            <h2>Study Resources</h2>
+
+            <p>
+              Access useful academic resources and study materials
+              that can help you stay organised and make the most
+              of your studies.
+            </p>
+
+            <button className="feature-action">
+              Explore Resources →
+            </button>
+          </div>
+
+        </div>
+
+
+        <div className="feature-detail reverse">
+
+          <img
+            src="/community.png"
+            alt="Student Community"
+          />
+
+          <div>
+            <p className="feature-number">04</p>
+
+            <h2>Student Community</h2>
+
+            <p>
+              Connect with other students, participate in campus
+              activities and become part of a supportive university
+              community.
+            </p>
+
+            <button className="feature-action">
+              Join Community →
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+       <Link to="/" className="secondary-button">
+          ← Back to Home
+        </Link>
+
+    </div>
+  )
+}
+
+export default Features

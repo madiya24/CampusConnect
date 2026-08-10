@@ -1,10 +1,33 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Announcements from './Announcements'
+import Features from './Features'
+import Events from './Events'
+import Resources from './Resources'
+import Community from './Community'
 import './App.css'
 
 function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+         <Route path="/events" element={<Events />} />
+         <Route path="/announcements" element={<Announcements />} />
+         <Route path="/resources" element={<Resources />} />
+         <Route path="/community" element={<Community />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+function Home() {
   const [showLogin, setShowLogin] = useState(false)
   const [showRegister, setShowRegister] = useState(false)
   return (
+    
+    
     <div className="app">
 
       {/* Navigation */}
@@ -18,7 +41,7 @@ function App() {
 
         <div className="nav-links">
           <a href="#home">Home</a>
-          <a href="#features">Features</a>
+          <Link to="/features" className="feature-link">Features</Link>
           <a href="#about">About</a>
           <button
               className="login-button"
@@ -144,6 +167,9 @@ function App() {
                 <p>
                   Discover upcoming university events and activities.
                 </p>
+                <Link to="/events" className="feature-link">
+                  Learn More →
+                </Link>
           </div>
 
           <div className="feature-card">
@@ -155,6 +181,9 @@ function App() {
                 <p>
                   Stay updated with important campus announcements.
                 </p>
+                  <Link to="/announcements" className="feature-link">
+                  Learn More →
+              </Link>
           </div>
 
           <div className="feature-card">
@@ -166,6 +195,9 @@ function App() {
                 <p>
                   Access useful academic resources and study materials.
                 </p>
+               <Link to="/resources" className="feature-link">
+                Learn More →
+              </Link>
           </div>
 
           <div className="feature-card">
@@ -177,6 +209,9 @@ function App() {
                 <p>
                   Connect with other students and participate in campus life.
                 </p>
+                  <Link to="/community" className="feature-link">
+                    Learn More →
+                 </Link>
           </div>
 
   </div>
@@ -489,8 +524,8 @@ function App() {
 
   </div>
 )}
-
-    </div>
+ 
+</div>
     )
     }
 
