@@ -1,11 +1,17 @@
 import './App.css'
 
-
 function App() {
   return (
     <div className="app">
+
+      {/* Navigation */}
       <nav className="navbar">
-        <div className="logo">CampusConnect</div>
+
+        <img
+          src="/logo.png"
+          alt="CampusConnect Logo"
+          className="nav-logo"
+        />
 
         <div className="nav-links">
           <a href="#home">Home</a>
@@ -13,12 +19,18 @@ function App() {
           <a href="#about">About</a>
           <button className="login-button">Login</button>
         </div>
+
       </nav>
 
       <main>
+
+        {/* Hero */}
         <section className="hero" id="home">
           <div className="hero-content">
-            <p className="welcome-text">WELCOME TO CAMPUSCONNECT</p>
+
+            <p className="welcome-text">
+              WELCOME TO CAMPUSCONNECT
+            </p>
 
             <h1>
               Your campus life,
@@ -40,16 +52,20 @@ function App() {
                 Learn More
               </button>
             </div>
+
           </div>
         </section>
 
+        {/* Features */}
         <section className="features" id="features">
+
           <div className="section-heading">
             <p>WHAT CAMPUSCONNECT OFFERS</p>
             <h2>Everything students need in one place.</h2>
           </div>
 
           <div className="feature-grid">
+
             <div className="feature-card">
               <h3>📅 Campus Events</h3>
               <p>
@@ -77,9 +93,13 @@ function App() {
                 Connect with other students and participate in campus life.
               </p>
             </div>
+
           </div>
+
         </section>
+
       </main>
+
     </div>
   )
 }
