@@ -2455,6 +2455,7 @@ body {
 .actual-lecture-notes h2 {
   font-size: 32px;
   margin-bottom: 20px;
+   color: #213c76;
 }
 
 .actual-lecture-notes h3 {
@@ -2494,4 +2495,155 @@ body {
 
 .lecture-introduction h2 {
   color: #172033;
+}
+
+/* =========================
+   ACTUAL LECTURE NOTES
+========================= */
+
+.actual-lecture-notes {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 45px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.actual-lecture-notes h2 {
+  font-size: 34px;
+  margin: 10px 0 25px;
+}
+
+.actual-lecture-notes h3 {
+  font-size: 22px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+.actual-lecture-notes p {
+  color: #667085;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.actual-lecture-notes ul,
+.actual-lecture-notes ol {
+  color: #667085;
+  line-height: 1.9;
+  padding-left: 25px;
+}
+
+.actual-lecture-notes pre {
+  background: #172033;
+  color: white;
+  padding: 22px;
+  border-radius: 12px;
+  overflow-x: auto;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.lecture-key-point {
+  margin-top: 40px;
+  padding: 25px;
+  background: #eef4ff;
+  border-radius: 14px;
+}
+
+.lecture-key-point strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.lecture-key-point p {
+  margin: 0;
+}
+
+.topics-covered-title {
+  color: #14274f;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   EVENT DETAILS
+========================= */
+
+.actual-event-details {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 45px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.event-small-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #667085;
+  margin-bottom: 10px;
+}
+
+.actual-event-details h2 {
+  font-size: 34px;
+  margin: 10px 0 20px;
+  color: #172033;
+}
+
+.actual-event-details h3 {
+  font-size: 22px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  color: #172033;
+}
+
+.actual-event-details > p {
+  color: #667085;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.event-detail-info {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.event-detail-info p {
+  margin: 8px 0;
+  color: #596579;
+}
+
+.actual-event-details ul {
+  color: #667085;
+  line-height: 1.9;
+  padding-left: 25px;
+}
+
+.event-key-point {
+  margin-top: 40px;
+  padding: 25px;
+  background: #eef4ff;
+  border-radius: 14px;
+}
+
+.event-key-point strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #172033;
+}
+
+.event-key-point p {
+  margin: 0;
+  color: #667085;
+  line-height: 1.7;
 }

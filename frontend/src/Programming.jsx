@@ -91,7 +91,7 @@ function Programming() {
         {/* Topics */}
         <div className="programming-section">
 
-          <h2>
+         <h2 className="topics-covered-title">
             Topics Covered
           </h2>
 
