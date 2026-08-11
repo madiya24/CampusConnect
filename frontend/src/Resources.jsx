@@ -1,7 +1,83 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Resources() {
+
+  const [selectedCategory, setSelectedCategory] = useState('ALL')
+
+  const resources = [
+    {
+      id: 1,
+      icon: '📖',
+      type: 'LECTURE NOTES',
+      title: 'Programming Fundamentals',
+      description:
+      'Review key programming concepts, algorithms, variables, loops and object-oriented programming.',
+      subject: 'Computer Science',
+      format: 'PDF',
+      link: '/resources/programming'
+    },
+    {
+      id: 2,
+      icon: '📝',
+      type: 'PAST PAPERS',
+      title: 'Database Systems',
+      description:
+        'Practice with previous database assessment questions covering SQL, relationships, normalisation and queries.',
+      subject: 'Information Systems',
+      format: 'PDF'
+    },
+    {
+      id: 3,
+      icon: '📚',
+      type: 'STUDY GUIDE',
+      title: 'Networking Fundamentals',
+      description:
+        'Learn about networking concepts including IP addressing, protocols, network devices and the OSI model.',
+      subject: 'Networking',
+      format: 'PDF'
+    },
+    {
+      id: 4,
+      icon: '💻',
+      type: 'TUTORIAL',
+      title: 'Web Development',
+      description:
+        'Explore HTML, CSS, JavaScript and modern web development concepts through practical learning materials.',
+      subject: 'Web Development',
+      format: 'Tutorial'
+    },
+    {
+      id: 5,
+      icon: '🗂️',
+      type: 'STUDY GUIDE',
+      title: 'Software Development',
+      description:
+        'Helpful material covering software development methodologies, testing and project management.',
+      subject: 'Software Engineering',
+      format: 'PDF'
+    },
+    {
+      id: 6,
+      icon: '📊',
+      type: 'PAST PAPERS',
+      title: 'Information Systems',
+      description:
+        'Practice questions and revision material to help prepare for information systems assessments.',
+      subject: 'Information Systems',
+      format: 'PDF'
+    }
+  ]
+
+  const filteredResources =
+    selectedCategory === 'ALL'
+      ? resources
+      : resources.filter(
+          resource => resource.type === selectedCategory
+        )
+
   return (
+
     <div className="resources-page">
 
       {/* Navigation */}
@@ -58,6 +134,7 @@ function Resources() {
         <div className="resources-top">
 
           <div>
+
             <h2>
               Academic Resources
             </h2>
@@ -65,6 +142,7 @@ function Resources() {
             <p>
               Find materials to support your learning and studies.
             </p>
+
           </div>
 
         </div>
@@ -73,23 +151,52 @@ function Resources() {
         {/* Categories */}
         <div className="resource-categories">
 
-          <button className="resource-category active">
+          <button
+            className={`resource-category ${
+              selectedCategory === 'ALL' ? 'active' : ''
+            }`}
+            onClick={() => setSelectedCategory('ALL')}
+          >
             All Resources
           </button>
 
-          <button className="resource-category">
+
+          <button
+            className={`resource-category ${
+              selectedCategory === 'LECTURE NOTES' ? 'active' : ''
+            }`}
+            onClick={() => setSelectedCategory('LECTURE NOTES')}
+          >
             Lecture Notes
           </button>
 
-          <button className="resource-category">
+
+          <button
+            className={`resource-category ${
+              selectedCategory === 'PAST PAPERS' ? 'active' : ''
+            }`}
+            onClick={() => setSelectedCategory('PAST PAPERS')}
+          >
             Past Papers
           </button>
 
-          <button className="resource-category">
+
+          <button
+            className={`resource-category ${
+              selectedCategory === 'STUDY GUIDE' ? 'active' : ''
+            }`}
+            onClick={() => setSelectedCategory('STUDY GUIDE')}
+          >
             Study Guides
           </button>
 
-          <button className="resource-category">
+
+          <button
+            className={`resource-category ${
+              selectedCategory === 'TUTORIAL' ? 'active' : ''
+            }`}
+            onClick={() => setSelectedCategory('TUTORIAL')}
+          >
             Tutorials
           </button>
 
@@ -99,197 +206,55 @@ function Resources() {
         {/* Resource Cards */}
         <div className="resources-grid">
 
+          {filteredResources.map(resource => (
 
-          {/* Resource 1 */}
-          <div className="resource-card">
+            <div
+              className="resource-card"
+              key={resource.id}
+            >
 
-            <div className="resource-icon">
-              📖
+              <div className="resource-icon">
+                {resource.icon}
+              </div>
+
+
+              <span className="resource-type">
+                {resource.type}
+              </span>
+
+
+              <h3>
+                {resource.title}
+              </h3>
+
+
+              <p>
+                {resource.description}
+              </p>
+
+
+              <div className="resource-meta">
+
+                <span>
+                  📚 {resource.subject}
+                </span>
+
+                <span>
+                  📄 {resource.format}
+                </span>
+
+              </div>
+
+
+              <Link
+                  to={resource.link}
+                  className="resource-button"
+                >
+                  View Resource →
+              </Link>
             </div>
 
-            <span className="resource-type">
-              LECTURE NOTES
-            </span>
-
-            <h3>
-              Programming Fundamentals
-            </h3>
-
-            <p>
-              Review key programming concepts, algorithms,
-              variables, loops and object-oriented programming.
-            </p>
-
-            <div className="resource-meta">
-              <span>📚 Computer Science</span>
-              <span>📄 PDF</span>
-            </div>
-
-            <button className="resource-button">
-              View Resource →
-            </button>
-
-          </div>
-
-
-          {/* Resource 2 */}
-          <div className="resource-card">
-
-            <div className="resource-icon">
-              📝
-            </div>
-
-            <span className="resource-type">
-              PAST PAPERS
-            </span>
-
-            <h3>
-              Database Systems
-            </h3>
-
-            <p>
-              Practice with previous database assessment questions
-              covering SQL, relationships, normalisation and queries.
-            </p>
-
-            <div className="resource-meta">
-              <span>📚 Information Systems</span>
-              <span>📄 PDF</span>
-            </div>
-
-            <button className="resource-button">
-              View Resource →
-            </button>
-
-          </div>
-
-
-          {/* Resource 3 */}
-          <div className="resource-card">
-
-            <div className="resource-icon">
-              📚
-            </div>
-
-            <span className="resource-type">
-              STUDY GUIDE
-            </span>
-
-            <h3>
-              Networking Fundamentals
-            </h3>
-
-            <p>
-              Learn about networking concepts including IP addressing,
-              protocols, network devices and the OSI model.
-            </p>
-
-            <div className="resource-meta">
-              <span>📚 Networking</span>
-              <span>📄 PDF</span>
-            </div>
-
-            <button className="resource-button">
-              View Resource →
-            </button>
-
-          </div>
-
-
-          {/* Resource 4 */}
-          <div className="resource-card">
-
-            <div className="resource-icon">
-              💻
-            </div>
-
-            <span className="resource-type">
-              TUTORIAL
-            </span>
-
-            <h3>
-              Web Development
-            </h3>
-
-            <p>
-              Explore HTML, CSS, JavaScript and modern web development
-              concepts through practical learning materials.
-            </p>
-
-            <div className="resource-meta">
-              <span>📚 Web Development</span>
-              <span>🎓 Tutorial</span>
-            </div>
-
-            <button className="resource-button">
-              View Resource →
-            </button>
-
-          </div>
-
-
-          {/* Resource 5 */}
-          <div className="resource-card">
-
-            <div className="resource-icon">
-              🗂️
-            </div>
-
-            <span className="resource-type">
-              STUDY GUIDE
-            </span>
-
-            <h3>
-              Software Development
-            </h3>
-
-            <p>
-              Helpful material covering software development
-              methodologies, testing and project management.
-            </p>
-
-            <div className="resource-meta">
-              <span>📚 Software Engineering</span>
-              <span>📄 PDF</span>
-            </div>
-
-            <button className="resource-button">
-              View Resource →
-            </button>
-
-          </div>
-
-
-          {/* Resource 6 */}
-          <div className="resource-card">
-
-            <div className="resource-icon">
-              📊
-            </div>
-
-            <span className="resource-type">
-              PAST PAPERS
-            </span>
-
-            <h3>
-              Information Systems
-            </h3>
-
-            <p>
-              Practice questions and revision material to help
-              prepare for information systems assessments.
-            </p>
-
-            <div className="resource-meta">
-              <span>📚 Information Systems</span>
-              <span>📄 PDF</span>
-            </div>
-
-            <button className="resource-button">
-              View Resource →
-            </button>
-
-          </div>
+          ))}
 
         </div>
 
@@ -309,6 +274,7 @@ function Resources() {
       </section>
 
     </div>
+
   )
 }
 

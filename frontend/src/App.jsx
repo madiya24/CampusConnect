@@ -5,6 +5,8 @@ import Features from './Features'
 import Events from './Events'
 import Resources from './Resources'
 import Community from './Community'
+import Programming from './Programming'
+ import LectureNotes from './LectureNotes'
 import './App.css'
 
 function App() {
@@ -17,6 +19,11 @@ function App() {
          <Route path="/announcements" element={<Announcements />} />
          <Route path="/resources" element={<Resources />} />
          <Route path="/community" element={<Community />} />
+         <Route path="/resources/programming" element={<Programming />} />
+         <Route
+          path="/resources/programming/lecture-notes"
+          element={<LectureNotes />}
+        />
       </Routes>
     </BrowserRouter>
   )
