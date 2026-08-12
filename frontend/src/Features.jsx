@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
+
 function Features() {
   return (
-    
     <div className="features-page">
 
       <section className="features-page-hero">
@@ -26,6 +26,8 @@ function Features() {
 
       <section className="features-page-content">
 
+        {/* Campus Events */}
+
         <div className="feature-detail">
 
           <img
@@ -45,13 +47,19 @@ function Features() {
               and get involved.
             </p>
 
-            <button className="feature-action">
+            <Link
+              to="/events"
+              className="feature-action"
+            >
               Explore Events →
-            </button>
+            </Link>
+
           </div>
 
         </div>
 
+
+        {/* Announcements */}
 
         <div className="feature-detail reverse">
 
@@ -71,13 +79,19 @@ function Features() {
               important.
             </p>
 
-            <button className="feature-action">
+            <Link
+              to="/announcements"
+              className="feature-action"
+            >
               View Announcements →
-            </button>
+            </Link>
+
           </div>
 
         </div>
 
+
+        {/* Study Resources */}
 
         <div className="feature-detail">
 
@@ -97,13 +111,19 @@ function Features() {
               of your studies.
             </p>
 
-            <button className="feature-action">
+            <Link
+              to="/resources"
+              className="feature-action"
+            >
               Explore Resources →
-            </button>
+            </Link>
+
           </div>
 
         </div>
 
+
+        {/* Student Community */}
 
         <div className="feature-detail reverse">
 
@@ -123,17 +143,30 @@ function Features() {
               community.
             </p>
 
-            <button className="feature-action">
+            <Link
+              to="/community"
+              className="feature-action"
+            >
               Join Community →
-            </button>
+            </Link>
+
           </div>
 
         </div>
 
+
+        {/* Back to Home */}
+
+        <div className="announcements-footer">
+          <Link
+            to="/"
+            className="secondary-button"
+          >
+            ← Back to Home
+          </Link>
+        </div>
+
       </section>
-       <Link to="/" className="secondary-button">
-          ← Back to Home
-        </Link>
 
     </div>
   )

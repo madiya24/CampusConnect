@@ -7,6 +7,15 @@ import Resources from './Resources'
 import Community from './Commity'
 import Programming from './Programming'
  import LectureNotes from './LectureNotes'
+ import DatabaseSystems from './DatabaseSystems'
+ import DatabasePaper1 from './DatabasePaper1'
+ import DatabasePaper2 from './DatabasePaper2'
+ import NetworkingFundamentals from './NetworkingFundamentals'
+ import WebDevelopment from './WebDevelopment'
+ import SoftwareDevelopment from './SoftwareDevelopment'
+ import InformationSystems from './InformationSystems'
+ import InformationSystemsPaper1 from './InformationSystemsPaper1'
+import InformationSystemsPaper2 from './InformationSystemsPaper2'
 import './App.css'
 
 function App() {
@@ -14,16 +23,53 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
-         <Route path="/events" element={<Events />} />
-         <Route path="/announcements" element={<Announcements />} />
-         <Route path="/resources" element={<Resources />} />
-         <Route path="/community" element={<Community />} />
-         <Route path="/resources/programming" element={<Programming />} />
-         <Route
-          path="/resources/programming/lecture-notes"
-          element={<LectureNotes />}
-        />
+          <Route path="/features" element={<Features />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/announcements" element={<Announcements />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/resources/programming" element={<Programming />} />
+          <Route
+            path="/resources/programming/lecture-notes"
+            element={<LectureNotes />}
+          />
+          <Route
+            path="/resources/database"
+            element={<DatabaseSystems />}
+          />
+          <Route
+            path="/resources/database/paper-1"
+            element={<DatabasePaper1 />}
+          />
+          <Route
+            path="/resources/database/paper-2"
+            element={<DatabasePaper2 />}
+          />
+          <Route
+            path="/resources/networking"
+            element={<NetworkingFundamentals />}
+          />
+          <Route
+            path="/resources/web-development"
+            element={<WebDevelopment />}
+          />
+          <Route
+            path="/resources/software-development"
+            element={<SoftwareDevelopment />}
+          />
+          <Route
+            path="/resources/information-systems"
+            element={<InformationSystems />}
+          />
+            <Route
+              path="/resources/information-systems/paper-1"
+              element={<InformationSystemsPaper1 />}
+            />
+
+            <Route
+              path="/resources/information-systems/paper-2"
+              element={<InformationSystemsPaper2 />}
+            />        
       </Routes>
     </BrowserRouter>
   )

@@ -6,68 +6,79 @@ function Resources() {
   const [selectedCategory, setSelectedCategory] = useState('ALL')
 
   const resources = [
-    {
-      id: 1,
-      icon: '📖',
-      type: 'LECTURE NOTES',
-      title: 'Programming Fundamentals',
-      description:
+  {
+    id: 1,
+    icon: '📖',
+    type: 'LECTURE NOTES',
+    title: 'Programming Fundamentals',
+    description:
       'Review key programming concepts, algorithms, variables, loops and object-oriented programming.',
-      subject: 'Computer Science',
-      format: 'PDF',
-      link: '/resources/programming'
-    },
-    {
-      id: 2,
-      icon: '📝',
-      type: 'PAST PAPERS',
-      title: 'Database Systems',
-      description:
-        'Practice with previous database assessment questions covering SQL, relationships, normalisation and queries.',
-      subject: 'Information Systems',
-      format: 'PDF'
-    },
-    {
-      id: 3,
-      icon: '📚',
-      type: 'STUDY GUIDE',
-      title: 'Networking Fundamentals',
-      description:
-        'Learn about networking concepts including IP addressing, protocols, network devices and the OSI model.',
-      subject: 'Networking',
-      format: 'PDF'
-    },
-    {
-      id: 4,
-      icon: '💻',
-      type: 'TUTORIAL',
-      title: 'Web Development',
-      description:
-        'Explore HTML, CSS, JavaScript and modern web development concepts through practical learning materials.',
-      subject: 'Web Development',
-      format: 'Tutorial'
-    },
-    {
-      id: 5,
-      icon: '🗂️',
-      type: 'STUDY GUIDE',
-      title: 'Software Development',
-      description:
-        'Helpful material covering software development methodologies, testing and project management.',
-      subject: 'Software Engineering',
-      format: 'PDF'
-    },
-    {
-      id: 6,
-      icon: '📊',
-      type: 'PAST PAPERS',
-      title: 'Information Systems',
-      description:
-        'Practice questions and revision material to help prepare for information systems assessments.',
-      subject: 'Information Systems',
-      format: 'PDF'
-    }
-  ]
+    subject: 'Computer Science',
+    format: 'PDF',
+    link: '/resources/programming'
+  },
+
+  {
+    id: 2,
+    icon: '📝',
+    type: 'PAST PAPERS',
+    title: 'Database Systems',
+    description:
+      'Practice with previous database assessment questions covering SQL, relationships, normalisation and queries.',
+    subject: 'Information Systems',
+    format: 'PDF',
+    link: '/resources/database'
+  },
+
+  {
+    id: 3,
+    icon: '📚',
+    type: 'STUDY GUIDE',
+    title: 'Networking Fundamentals',
+    description:
+      'Learn about networking concepts including IP addressing, protocols, network devices and the OSI model.',
+    subject: 'Networking',
+    format: 'PDF',
+    link: '/resources/networking'
+  },
+
+  {
+    id: 4,
+    icon: '💻',
+    type: 'TUTORIAL',
+    title: 'Web Development',
+    description:
+      'Explore HTML, CSS, JavaScript and modern web development concepts through practical learning materials.',
+    subject: 'Web Development',
+    format: 'Tutorial',
+    link: '/resources/web-development'
+  },
+
+  {
+    id: 5,
+    icon: '🗂️',
+    type: 'STUDY GUIDE',
+    title: 'Software Development',
+    description:
+      'Helpful material covering software development methodologies, testing and project management.',
+    subject: 'Software Engineering',
+    format: 'PDF',
+    link: '/resources/software-development'
+  },
+
+  {
+    id: 6,
+    icon: '📊',
+    type: 'PAST PAPERS',
+    title: 'Information Systems',
+    description:
+      'Practice questions and revision material to help prepare for information systems assessments.',
+    subject: 'Information Systems',
+    format: 'PDF',
+    link: '/resources/information-systems'
+  }
+]
+  
 
   const filteredResources =
     selectedCategory === 'ALL'
