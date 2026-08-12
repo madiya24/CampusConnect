@@ -2647,3 +2647,388 @@ body {
   color: #667085;
   line-height: 1.7;
 }
+
+/* =========================
+   STUDENT COMMUNITY DETAILS
+========================= */
+
+.actual-community-details {
+  max-width: 1000px;
+  margin: 70px auto 20px;
+  padding: 50px 60px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 35px rgba(23, 32, 51, 0.06);
+
+  text-align: left;
+}
+
+
+/* Group Label */
+
+.actual-community-details .community-label {
+  margin-bottom: 12px;
+
+  color: #2f6df6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+/* Group Title */
+
+.actual-community-details h2 {
+  margin: 0 0 20px;
+
+  color: #172033;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+
+/* Main Description */
+
+.actual-community-details > p {
+  margin-bottom: 30px;
+
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* Section Titles */
+
+.actual-community-details h3 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+
+  color: #172033;
+  font-size: 23px;
+}
+
+
+/* Bullet List */
+
+.actual-community-details ul {
+  margin: 0;
+  padding-left: 25px;
+
+  color: #667085;
+}
+
+.actual-community-details li {
+  margin-bottom: 12px;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.actual-community-details li::marker {
+  color: #2f6df6;
+}
+
+
+/* Who Should Join paragraph */
+
+.actual-community-details h3 + p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* Community Tip */
+
+.community-key-point {
+  margin-top: 40px;
+  padding: 25px 30px;
+
+  background: #eef4ff;
+  border: 1px solid #dce8ff;
+  border-radius: 14px;
+}
+
+.community-key-point strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #172033;
+  font-size: 17px;
+}
+
+.community-key-point p {
+  margin: 0;
+
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   COMMUNITY CARD
+========================= */
+
+.community-card {
+  cursor: pointer;
+
+  padding: 35px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #f8fafc;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #cbdcff;
+
+  box-shadow: 0 12px 30px rgba(23, 32, 51, 0.08);
+}
+
+
+/* Community Icon */
+
+.community-icon {
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eef4ff;
+
+  font-size: 27px;
+}
+
+
+/* Explore Button */
+
+.community-card button {
+  border: none;
+  background: transparent;
+
+  color: #2f6df6;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  transition: 0.2s ease;
+}
+
+.community-card button:hover {
+  color: #172033;
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .actual-community-details {
+    margin: 50px 5% 20px;
+    padding: 30px 25px;
+  }
+
+  .actual-community-details h2 {
+    font-size: 30px;
+  }
+
+  .actual-community-details h3 {
+    font-size: 21px;
+  }
+
+}
+
+/* =========================
+   JOIN COMMUNITY POPUP
+========================= */
+
+.join-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(7, 26, 51, 0.6);
+}
+
+.join-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 450px;
+  max-height: 90vh;
+
+  padding: 40px;
+
+  background: white;
+  border-radius: 18px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+  overflow-y: auto;
+}
+
+.close-join {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  background: transparent;
+
+  color: #667085;
+  font-size: 26px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.join-modal-label {
+  margin-bottom: 10px;
+
+  color: #2f6df6;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.join-modal h2 {
+  margin: 0 0 10px;
+
+  color: #172033;
+  font-size: 30px;
+}
+
+.join-modal-text {
+  margin: 0 0 25px;
+
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.join-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-modal label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #172033;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.join-modal input,
+.join-modal select {
+  display: block;
+
+  width: 100%;
+  height: 45px;
+
+  padding: 12px 14px;
+  margin: 0 0 18px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  background: white;
+  color: #172033;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.join-modal input:focus,
+.join-modal select:focus {
+  border-color: #2f6df6;
+  box-shadow: 0 0 0 2px rgba(47, 109, 246, 0.1);
+}
+
+.join-modal input::placeholder {
+  color: #98a2b3;
+}
+
+.join-submit {
+  width: 100%;
+
+  margin-top: 5px;
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #172033;
+  color: white;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.join-submit:hover {
+  background: #2f6df6;
+}
+
+/* Fix Student Community headings */
+
+.community-section-heading h2 {
+  color: #172033;
+}
+
+.activities-text h2 {
+  color: #172033;
+}
+
+.activities-text h2 span {
+  color: #2f6df6;
+}
+
+
