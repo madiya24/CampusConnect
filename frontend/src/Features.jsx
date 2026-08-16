@@ -31,7 +31,7 @@ function Features() {
         <div className="feature-detail">
 
           <img
-            src="/events.png"
+            src="/event2.jpg"
             alt="Campus Events"
           />
 
@@ -64,7 +64,7 @@ function Features() {
         <div className="feature-detail reverse">
 
           <img
-            src="/announcements.png"
+            src="/announcement.jpg"
             alt="Announcements"
           />
 
@@ -96,7 +96,7 @@ function Features() {
         <div className="feature-detail">
 
           <img
-            src="/resources.png"
+            src="/resources.jpg"
             alt="Study Resources"
           />
 
@@ -128,7 +128,7 @@ function Features() {
         <div className="feature-detail reverse">
 
           <img
-            src="/community.png"
+            src="/commity_image.jpg"
             alt="Student Community"
           />
 

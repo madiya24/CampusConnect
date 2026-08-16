@@ -167,9 +167,9 @@ function Home() {
         <div className="hero-image-container">
 
           <img
-            src="/hero-student.png"
-            alt="Student using CampusConnect"
-            className="hero-image"
+            src="/home-hero.jpg"
+            alt="Student using a laptop"
+            className="home-hero-image"
           />
 
         </div>
@@ -213,7 +213,7 @@ function Home() {
 
       <div className="feature-card">
                 <div className="feature-image">
-                  <img src="/events.png" alt="Campus Events" />
+                  <img src="/event2.jpg" alt="Campus Events" />
                 </div>
 
                 <h3>Campus Events</h3>
@@ -227,7 +227,7 @@ function Home() {
 
           <div className="feature-card">
                 <div className="feature-image">
-                  <img src="/announcements.png" alt="Announcements" />
+                  <img src="/announcement.jpg" alt="Announcements" />
                 </div>
 
                 <h3>Announcements</h3>
@@ -241,7 +241,7 @@ function Home() {
 
           <div className="feature-card">
                 <div className="feature-image">
-                  <img src="/resources.png" alt="Study Resources" />
+                  <img src="/resources.jpg" alt="Study Resources" />
                 </div>
 
                 <h3>Study Resources</h3>
@@ -255,12 +255,11 @@ function Home() {
 
           <div className="feature-card">
                 <div className="feature-image">
-                  <img src="/community.png" alt="Student Community" />
+                  <img src="/commity_image.jpg" alt="Student Community" />
                 </div>
-
                 <h3>Student Community</h3>
                 <p>
-                  Connect with other students and participate in campus life.
+                  Connect with other students and participate in capus life.
                 </p>
                   <Link to="/community" className="feature-link">
                     Learn More →
